@@ -13,6 +13,7 @@
 		106094A027942AC000B76D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1060949E27942AC000B76D69 /* Main.storyboard */; };
 		106094A227942AC000B76D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106094A127942AC000B76D69 /* Assets.xcassets */; };
 		106094A527942AC000B76D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106094A327942AC000B76D69 /* LaunchScreen.storyboard */; };
+		106094AD27942AF200B76D69 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106094AC27942AF200B76D69 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		106094A127942AC000B76D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		106094A427942AC000B76D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		106094A627942AC000B76D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106094AC27942AF200B76D69 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				106094A127942AC000B76D69 /* Assets.xcassets */,
 				106094A327942AC000B76D69 /* LaunchScreen.storyboard */,
 				106094A627942AC000B76D69 /* Info.plist */,
+				106094AC27942AF200B76D69 /* NetworkingManager.swift */,
 			);
 			path = CryptoPrice;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1060949D27942AC000B76D69 /* ViewController.swift in Sources */,
+				106094AD27942AF200B76D69 /* NetworkingManager.swift in Sources */,
 				1060949927942AC000B76D69 /* AppDelegate.swift in Sources */,
 				1060949B27942AC000B76D69 /* SceneDelegate.swift in Sources */,
 			);
