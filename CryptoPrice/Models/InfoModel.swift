@@ -11,19 +11,19 @@ import Foundation
 struct InfoModel: Codable {
     let status: Status
     let data: [String: Data]
-    
-    
+
+
     // MARK: - Datum
     struct Data: Codable {
         let id: Int
-        let name, symbol, category, datumDescription: String
+        let name, symbol, category, description: String
         let slug: String
         let logo: String
         let subreddit, notice: String
         let dateAdded: String
     }
-    
-    
+
+
     // MARK: - Status
     struct Status: Codable {
         let timestamp: String

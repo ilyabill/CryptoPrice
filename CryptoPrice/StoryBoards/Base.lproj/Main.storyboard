@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dbq-aD-yUy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19529"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coin Table View Controller-->
+        <scene sceneID="lDa-9z-kew">
+            <objects>
+                <tableViewController id="Dbq-aD-yUy" customClass="CoinTableViewController" customModule="CryptoPrice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="K29-jP-Add">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="108" id="m7d-Xa-MGm" customClass="CustomTableViewCell" customModule="CryptoPrice" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="108"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m7d-Xa-MGm" id="Eea-R0-CZZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNC-jY-486">
+                                            <rect key="frame" x="30" y="29" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="85w-MW-VyG"/>
+                                                <constraint firstAttribute="height" constant="50" id="BEe-Ac-gJS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CXX-LJ-bVy">
+                                            <rect key="frame" x="100" y="21" width="114" height="66"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7Q-2o-EWC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="37.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37.5" id="clQ-yP-yHb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1000 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srX-sP-3jG">
+                                                    <rect key="frame" x="0.0" y="45.5" width="114" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="eEc-3m-tgc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="CXX-LJ-bVy" secondAttribute="bottom" constant="10" id="3nd-rd-tLy"/>
+                                        <constraint firstItem="CXX-LJ-bVy" firstAttribute="top" secondItem="Eea-R0-CZZ" secondAttribute="topMargin" constant="10" id="6Ub-Nv-vgy"/>
+                                        <constraint firstItem="eNC-jY-486" firstAttribute="centerY" secondItem="Eea-R0-CZZ" secondAttribute="centerY" id="OGi-ah-5Vg"/>
+                                        <constraint firstItem="CXX-LJ-bVy" firstAttribute="leading" secondItem="eNC-jY-486" secondAttribute="trailing" constant="20" id="QvD-NI-FKl"/>
+                                        <constraint firstItem="eNC-jY-486" firstAttribute="leading" secondItem="Eea-R0-CZZ" secondAttribute="leadingMargin" constant="10" id="rc0-k9-i4B"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="coinNameLabel" destination="X7Q-2o-EWC" id="lpg-b5-uPn"/>
+                                    <outlet property="logoImage" destination="eNC-jY-486" id="7bI-gU-2ie"/>
+                                    <outlet property="priceLabel" destination="srX-sP-3jG" id="aOl-oM-XPQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dbq-aD-yUy" id="0y0-JQ-YEU"/>
+                            <outlet property="delegate" destination="Dbq-aD-yUy" id="o4M-Fv-sKg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TF1-Bj-hM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934.78260869565224" y="152.67857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
