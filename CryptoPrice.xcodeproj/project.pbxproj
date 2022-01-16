@@ -14,7 +14,8 @@
 		106094A227942AC000B76D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106094A127942AC000B76D69 /* Assets.xcassets */; };
 		106094A527942AC000B76D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106094A327942AC000B76D69 /* LaunchScreen.storyboard */; };
 		106094AD27942AF200B76D69 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106094AC27942AF200B76D69 /* NetworkingManager.swift */; };
-		DA41854327943DFF004B1E48 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41854227943DFF004B1E48 /* Model.swift */; };
+		106094AF2794559100B76D69 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106094AE2794559100B76D69 /* InfoModel.swift */; };
+		DA41854327943DFF004B1E48 /* ListingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41854227943DFF004B1E48 /* ListingsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		106094A427942AC000B76D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		106094A627942AC000B76D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		106094AC27942AF200B76D69 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		DA41854227943DFF004B1E48 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		106094AE2794559100B76D69 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		DA41854227943DFF004B1E48 /* ListingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 				106094A327942AC000B76D69 /* LaunchScreen.storyboard */,
 				106094A627942AC000B76D69 /* Info.plist */,
 				106094AC27942AF200B76D69 /* NetworkingManager.swift */,
-				DA41854227943DFF004B1E48 /* Model.swift */,
+				DA41854227943DFF004B1E48 /* ListingsModel.swift */,
+				106094AE2794559100B76D69 /* InfoModel.swift */,
 			);
 			path = CryptoPrice;
 			sourceTree = "<group>";
@@ -144,11 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA41854327943DFF004B1E48 /* Model.swift in Sources */,
+				DA41854327943DFF004B1E48 /* ListingsModel.swift in Sources */,
 				1060949D27942AC000B76D69 /* ViewController.swift in Sources */,
 				106094AD27942AF200B76D69 /* NetworkingManager.swift in Sources */,
 				1060949927942AC000B76D69 /* AppDelegate.swift in Sources */,
 				1060949B27942AC000B76D69 /* SceneDelegate.swift in Sources */,
+				106094AF2794559100B76D69 /* InfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
