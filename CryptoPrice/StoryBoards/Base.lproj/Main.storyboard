@@ -30,23 +30,17 @@
                                                 <constraint firstAttribute="height" constant="50" id="BEe-Ac-gJS"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CXX-LJ-bVy">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CXX-LJ-bVy">
                                             <rect key="frame" x="100" y="21" width="114" height="66"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7Q-2o-EWC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="37.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="37.5" id="clQ-yP-yHb"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1000 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srX-sP-3jG">
-                                                    <rect key="frame" x="0.0" y="45.5" width="114" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20.5" id="eEc-3m-tgc"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="0.0" y="38" width="114" height="28"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
